@@ -1,0 +1,19 @@
+print("sentinel sreach")
+
+import array as arr
+c=arr.array('d',[])
+a=int(input("Enter the students count:"))
+print("Enter the %i students roll no:"%(a))
+list1=list(map(int,input().split()))
+print("students roll no:",list1)
+b=int(input("Enter the roll no which to be serach: "))
+last=list1[a-1]
+list1[a-1]=b
+i=0
+
+last=list1[a-1]
+if((i<a-1) or (list1[a-1]==b)):
+     print("roll no %i attend training program:"%(b))
+else:
+     print("roll no %i  not attend training program:"%(b))
+
